@@ -1,4 +1,4 @@
-import { Training } from "../../../types/resume";
+import type { Training } from "../../../types/resume";
 
 interface TrainingProps {
     training: Training[];

@@ -1,5 +1,5 @@
 import { ResumeData } from "../../../types/resume";
-import { ResumeBlock } from "../../../engine/buildBlocks";
+import { ResumeBlock } from "../../../engine/types";
 
 interface SectionProps {
     data: ResumeData;
