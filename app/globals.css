@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "./styles/variables.css";
+@import "./styles/base.css";
+@import "./styles/layout.css";
+@import "./styles/buttons.css";
+@import "./styles/navbar.css";
+@import "./styles/footer.css";
+@import "./styles/hero.css";
+@import "./styles/animations.css";
+@import "./styles/features.css";
+@import "./styles/templates.css";
+@import "./styles/creator.css";
+@import "./styles/about.css";
+@import "./styles/privacy.css";
+@import "./styles/support.css";
+@import "./styles/builder.css";
+@import "./styles/resume-modern.css";
+@import "./styles/minimal.css";
+@import "./styles/executive.css";
+@import "./styles/Form.css";
+
+
+
+
+/* ===========================
+   Desktop-Only Gate
+=========================== */
+
+.mobile-block-screen {
+    display: none;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@media (max-width: 1024px) {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    .desktop-only-content {
+        display: none;
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .mobile-block-screen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2.5rem;
+        background: var(--background);
+        text-align: center;
+    }
+
+    .mobile-block-screen__inner {
+        max-width: 420px;
+    }
+
+    .mobile-block-screen__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        letter-spacing: -0.02em;
+    }
+
+    .mobile-block-screen__message {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--text-light);
+    }
+
 }

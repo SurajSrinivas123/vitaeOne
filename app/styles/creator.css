@@ -1,0 +1,128 @@
+.creator {
+
+    padding: 6rem 0;
+
+}
+
+.creator-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.creator-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.creator-description {
+
+    margin-top: 1.25rem;
+
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+}
+
+.creator-image {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+}
+
+.creator-photo {
+
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+
+    display: block;
+
+}
+
+.creator-support-button {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .6rem;
+
+}
+
+@media (max-width: 992px) {
+
+    .creator-container {
+
+        gap: 3rem;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .creator {
+
+        padding: 4rem 0;
+
+    }
+
+    .creator-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+        text-align: center;
+
+    }
+
+    .creator-content {
+
+        align-items: center;
+
+        order: 2;
+
+    }
+
+    .creator-image {
+
+        order: 1;
+
+    }
+
+    .creator-photo {
+
+        max-width: 300px;
+
+    }
+
+}
+
+
+.creator-linkedin-button {
+
+    margin-top: 2rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .6rem;
+
+}

@@ -1,0 +1,425 @@
+.resume-minimal {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #333;
+
+}
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+.minimal-header {
+
+    margin-bottom: 10px;
+
+    padding-bottom: 10px;
+
+
+
+}
+
+.minimal-header__content {
+
+    width: 100%;
+
+}
+
+.minimal-header__name {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+
+}
+
+.minimal-header__title {
+
+    color: #1976d2;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.minimal-header__contact {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    font-size: 12px;
+
+    color: #555;
+
+}
+
+
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+.minimal-section {
+
+    margin-bottom: 12px;
+
+}
+
+.minimal-section__title {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    margin-bottom: 8px;
+
+}
+
+.minimal-section__divider {
+
+    height: 1px;
+
+    background: #d8d8d8;
+
+    margin-bottom: 0px;
+
+}
+
+/* =====================================
+   EXPERIENCE
+===================================== */
+
+.minimal-experience {
+
+    margin-bottom: 16px;
+
+}
+
+.minimal-experience__role {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    margin-bottom: 4px;
+
+}
+
+.minimal-experience__company {
+
+    color: #1976d2;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    margin-bottom: 0px;
+
+}
+
+.minimal-experience__date {
+
+    font-size: 12px;
+
+    color: #666;
+
+    margin-bottom: 10px;
+
+}
+
+.minimal-experience__list {
+
+    margin-top: 0px;
+
+    padding-left: 0;
+
+    list-style-type: disc;
+
+    list-style-position: inside;
+
+}
+
+.minimal-experience__list li {
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 0px;
+
+    padding-left: 2px;
+
+    color: #333;
+
+}
+
+.minimal-experience__list li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =====================================
+   EDUCATION
+===================================== */
+
+.minimal-education {
+
+    margin-bottom: 8px;
+
+}
+
+.minimal-education__degree {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+
+}
+
+.minimal-education__field {
+
+    color: #1976d2;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    margin-bottom: 2px;
+
+}
+
+.minimal-education__institution {
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+
+}
+
+.minimal-education__date {
+
+    font-size: 12px;
+
+    color: #666;
+
+}
+
+.minimal-education__cgpa {
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #666;
+
+}
+
+
+.minimal-summary {
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    text-align: justify;
+
+}
+
+
+.minimal-skills {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 8px 16px;
+
+    margin-top: 8px;
+
+}
+
+.minimal-skill {
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    word-break: break-word;
+
+}
+
+
+.minimal-training__item h4 {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #173B63;
+
+}
+
+.minimal-training__item p {
+
+    font-size: 12px;
+
+    color: #2F65B8;
+
+}
+
+
+/* =====================================
+   LANGUAGES
+===================================== */
+
+.minimal-languages {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.minimal-language {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.minimal-language strong {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #173B63;
+
+    flex: 1;
+
+}
+
+/* Hide the proficiency text (Beginner, Fluent, etc.) */
+
+.minimal-language>div:not(.minimal-language__rating) {
+
+    display: none;
+
+}
+
+.minimal-language__rating {
+
+    display: flex;
+
+    gap: 4px;
+
+}
+
+.minimal-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #D7DDE6;
+
+}
+
+.minimal-dot--filled {
+
+    background: #2F65B8;
+
+}
+
+
+/* =====================================
+   TWO COLUMN LAYOUT
+===================================== */
+
+.resume-minimal__content {
+
+    display: grid;
+
+    grid-template-columns: 65% 35%;
+
+    column-gap: 28px;
+
+    align-items: start;
+
+    margin-top: 8px;
+
+}
+
+.minimal-header--inline {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 18px;
+}
+
+.resume-minimal__left {
+
+    min-width: 0;
+
+}
+
+.resume-minimal__right {
+
+    min-width: 0;
+
+}
+
+
+.minimal-experience__meta {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+
+.minimal-header__separator {
+    color: var(--text-muted);
+    margin: 0 8px;
+    user-select: none;
+}
