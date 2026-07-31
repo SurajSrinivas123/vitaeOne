@@ -3,7 +3,7 @@
 // ======================================
 
 export const APP = {
-    name: process.env.NEXT_PUBLIC_APP_NAME || "VitaeOne • by Suraj Srinivas",
+    name: process.env.NEXT_PUBLIC_APP_NAME || "VitaeOne",
 
     url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
 
