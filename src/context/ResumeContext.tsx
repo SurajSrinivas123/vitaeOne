@@ -10,7 +10,7 @@ import {
 
 import { ResumeData } from "@/components/resume/types/resume";
 import { sampleResume } from "@/components/resume/data/sampleResume";
-import { ResumeTemplate } from "@/lib/templates";
+import { ResumeTemplate } from "@/src/lib/templates";
 
 interface ResumeContextType {
     resume: ResumeData;
