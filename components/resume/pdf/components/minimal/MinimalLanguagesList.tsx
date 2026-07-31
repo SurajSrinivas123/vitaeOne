@@ -20,6 +20,7 @@ export default function MinimalLanguagesList({ languages }: Props) {
                                         : [minimalStyles.dot]
                                 }
                             />
+                    
                         ))}
                     </View>
                 </View>
