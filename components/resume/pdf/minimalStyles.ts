@@ -142,6 +142,7 @@ export const minimalStyles = StyleSheet.create({
     skill: { width: "50%", fontSize: px(13), color: MinimalColors.text, marginBottom: px(8) },
 
     /* TRAINING */
+    trainingList: { marginTop: px(4) },
     trainingItem: { marginBottom: px(10) },
     trainingTitle: { fontSize: px(13), fontWeight: "bold", color: MinimalColors.navy },
     trainingInstitution: { marginTop: px(8), fontSize: px(12), color: MinimalColors.navyAccent },
