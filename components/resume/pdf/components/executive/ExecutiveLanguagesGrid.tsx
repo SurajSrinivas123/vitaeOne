@@ -36,7 +36,7 @@ export default function ExecutiveLanguagesGrid({ languages }: Props) {
                                             styles.dot,
                                             index < language.rating
                                                 ? styles.dotFilled
-                                                : null,
+                                                : undefined,
                                         ]}
                                     />
                                 ))}
