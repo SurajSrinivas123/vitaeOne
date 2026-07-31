@@ -32,12 +32,11 @@ export default function ExecutiveLanguagesGrid({ languages }: Props) {
                                 {Array.from({ length: 5 }).map((_, index) => (
                                     <View
                                         key={index}
-                                        style={[
-                                            styles.dot,
+                                        style={
                                             index < language.rating
-                                                ? styles.dotFilled
-                                                : undefined,
-                                        ]}
+                                                ? [styles.dot, styles.dotFilled]
+                                                : [styles.dot]
+                                        }
                                     />
                                 ))}
                             </View>
