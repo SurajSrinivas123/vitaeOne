@@ -14,7 +14,11 @@ export default function MinimalLanguagesList({ languages }: Props) {
                         {Array.from({ length: 5 }).map((_, index) => (
                             <View
                                 key={index}
-                                style={[minimalStyles.dot, index < language.rating ? minimalStyles.dotFilled : null]}
+                                style={
+                                    index < language.rating
+                                        ? [minimalStyles.dot, minimalStyles.dotFilled]
+                                        : [minimalStyles.dot]
+                                }
                             />
                         ))}
                     </View>
