@@ -147,6 +147,7 @@ export const minimalStyles = StyleSheet.create({
     trainingInstitution: { marginTop: px(8), fontSize: px(12), color: MinimalColors.navyAccent },
 
     /* LANGUAGES */
+    languagesList: { marginTop: px(4) },
     languageItem: {
         flexDirection: "row",
         justifyContent: "space-between",
