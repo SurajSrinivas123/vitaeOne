@@ -57,3 +57,24 @@ export interface ResumeData {
     training: Training[];
     languages: Language[];
 }
+
+
+
+
+
+export interface ResumeData {
+    personal: PersonalInfo;
+    summary: string;
+    experience: Experience[];
+    education: Education[];
+    skills: Skill[];
+    training: Training[];
+    languages: Language[];
+}
+
+// Aliases kept for compatibility with files using the "*Item" naming
+export type ExperienceItem = Experience;
+export type EducationItem = Education;
+export type SkillItem = Skill;
+export type TrainingItem = Training;
+export type LanguageItem = Language;
