@@ -1,0 +1,480 @@
+/* ==========================================================
+   MODERN RESUME
+   ========================================================== */
+
+/* =========================
+   PAGE
+========================= */
+
+.resume-modern {
+
+    width: 100%;
+    height: 100%;
+
+    padding: 8mm 4mm 8mm 4mm;
+
+    color: #333;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+.resume-modern *,
+.resume-modern *::before,
+.resume-modern *::after {
+
+    box-sizing: border-box;
+
+}
+
+.resume-modern h1,
+.resume-modern h2,
+.resume-modern h3,
+.resume-modern h4,
+.resume-modern p,
+.resume-modern ul {
+
+    margin: 0;
+
+}
+
+.resume-modern ul {
+
+    padding-left: 18px;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.resume-modern__header {
+
+    margin-bottom: 18px;
+
+}
+
+.resume-modern__name {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #173B63;
+
+    line-height: 1.15;
+
+}
+
+.resume-modern__designation {
+
+    margin-top: 6px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #2F65B8;
+
+}
+
+.resume-modern__contact {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    color: #555555;
+
+}
+
+.resume-modern__separator {
+
+    color: #999999;
+
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+
+.resume-modern__summary-content {
+    padding-top: 16px;
+}
+
+.resume-modern__heading {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    color: #173B63;
+
+}
+
+.resume-modern__heading {
+    display: block;
+    padding-bottom: 6px;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #2F65B8;
+}
+
+/* =========================
+   SUMMARY
+========================= */
+
+.resume-modern__summary {
+
+    text-align: justify;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+}
+
+/* =========================
+   COMMON ROW
+========================= */
+
+.resume-modern__row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+}
+
+
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.resume-modern__experience {
+
+    margin-bottom: 14px;
+
+}
+
+.resume-modern__experience:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.resume-modern__role {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #173B63;
+
+    line-height: 1.25;
+
+}
+
+.resume-modern__company {
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+    font-weight: 100;
+
+    color: #2F65B8;
+
+}
+
+.resume-modern__list {
+    margin-top: 10px;
+    padding-left: 0px;
+    /* reduce from 18px */
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.resume-modern__list li {
+    margin-bottom: 3px;
+    padding-left: 2px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.resume-modern__list li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.resume-modern__education {
+
+    margin-bottom: 12px;
+
+}
+
+.resume-modern__education:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.resume-modern__field {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #173B63;
+
+    line-height: 1.25;
+
+}
+
+
+.resume-modern__row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 24px;
+
+}
+
+.resume-modern__row>div {
+
+    flex: 1;
+
+}
+
+
+.resume-modern__date {
+
+    flex-shrink: 0;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #666666;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.resume-modern__skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 18px;
+    row-gap: 6px;
+
+    margin-bottom: 20px;
+}
+
+.resume-modern__skill {
+
+    font-size: 13px;
+
+    color: #333333;
+
+    line-height: 1.45;
+
+}
+
+
+/* =========================
+   TRAINING
+========================= */
+
+.resume-modern__training {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 28px;
+
+    row-gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+.resume-modern__training-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.resume-modern__training-item h4 {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #173B63;
+
+}
+
+.resume-modern__training-item p {
+
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    color: #2F65B8;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================
+   LANGUAGES
+========================= */
+
+.resume-modern__languages {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 28px;
+
+    row-gap: 10px;
+
+}
+
+.resume-modern__language {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+.resume-modern__language strong {
+
+    flex: 1;
+
+    font-size: 13px;
+
+    color: #173B63;
+
+}
+
+.resume-modern__language span {
+
+    font-size: 12px;
+
+    color: #666666;
+
+}
+
+.resume-modern__rating {
+
+    display: flex;
+
+    gap: 4px;
+
+}
+
+.resume-modern__dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #D7DDE6;
+
+}
+
+.resume-modern__dot--filled {
+
+    background: #2F65B8;
+
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+.resume-modern__section {
+    margin-bottom: 12px;
+}
+
+.resume-modern__experience {
+
+    break-inside: avoid;
+
+    page-break-inside: avoid;
+
+}
+
+.resume-modern__education {
+
+    break-inside: avoid;
+
+    page-break-inside: avoid;
+
+}
+
+.resume-modern__company-inline {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2F65B8;
+}

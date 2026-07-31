@@ -1,0 +1,171 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+    width: 100%;
+
+    backdrop-filter: blur(18px);
+
+    background: rgba(255, 255, 255, .75);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.navbar-container {
+
+    height: var(--navbar-height);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.navbar-logo {
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    transition: .25s;
+
+}
+
+.navbar-logo:hover {
+
+    opacity: .75;
+
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+.navbar-link {
+
+    position: relative;
+
+    color: var(--text-light);
+
+    font-size: .95rem;
+
+    font-weight: 500;
+
+    transition: .25s;
+
+}
+
+.navbar-link:hover {
+
+    color: var(--text);
+
+}
+
+/* underline animation */
+
+.navbar-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: .25s;
+
+}
+
+.navbar-link:hover::after {
+
+    width: 100%;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.navbar-button {
+
+    padding: .85rem 1.6rem;
+
+    border-radius: 14px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: .95rem;
+
+    font-weight: 600;
+
+    transition: .25s;
+
+}
+
+.navbar-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+.navbar-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+    color: var(--text-primary);
+}
+
+.navbar-link.active {
+    color: var(--text-primary);
+    font-weight: 700;
+}

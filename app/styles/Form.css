@@ -1,0 +1,451 @@
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+
+.editor-panel {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.editor-card {
+    background: #fff;
+    padding: 0px;
+}
+
+.editor-card h2 {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ececec;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    padding: 0 0px 12px;
+    text-align: left;
+}
+
+/* ===========================
+   CARD TITLE ROW (title + action button)
+=========================== */
+
+.card-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ececec;
+}
+
+.card-title-row h2 {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+.clear-all-button {
+    width: auto;
+    height: 36px;
+    padding: 0 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    background: #fff;
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.clear-all-button:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #fff;
+}
+
+.section-limit {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 11px 14px;
+    font-size: 14px;
+    background: #fff;
+    color: #111827;
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .08);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.date-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* ===========================
+   ITEM BOXES
+=========================== */
+
+.experience-item,
+.education-item,
+.certification-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.experience-header,
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.experience-title,
+.education-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skill-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.skill-name {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ===========================
+   LANGUAGES
+=========================== */
+
+/* .language-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: end;
+    margin-bottom: 16px;
+} */
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.description-group {
+    margin-top: 16px;
+}
+
+.description-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* ===========================
+   CHARACTER COUNT
+=========================== */
+
+.character-count {
+    margin-top: 8px;
+    text-align: right;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.character-count.limit {
+    color: #dc2626;
+}
+
+/* ===========================
+   PRIMARY BUTTON
+=========================== */
+
+.outline-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 44px;
+
+    border: 1px solid #0e121c;
+    border-radius: 6px;
+
+    background: #0f172a;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: transform .15s ease, border-color .15s ease;
+}
+
+.outline-button:hover:not(:disabled) {
+    transform: translateY(-3px);
+}
+
+.outline-button:disabled {
+    background: #e5e7eb;
+    border-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* ===========================
+   DELETE BUTTONS
+=========================== */
+
+.delete-experience,
+.delete-education,
+.delete-skill {
+    height: 38px;
+    padding: 0 16px;
+
+    border: 1px solid #dc2626;
+    border-radius: 6px;
+
+    background: #fff;
+    color: #dc2626;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease;
+}
+
+.delete-experience:hover,
+.delete-education:hover,
+.delete-skill:hover {
+    background: #dc2626;
+    color: #fff;
+}
+
+/* ===========================
+   CHECKBOX
+=========================== */
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+}
+
+
+.language-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+/* ===========================
+   CUSTOM DROPDOWN (Language / Proficiency)
+=========================== */
+
+.field-select {
+    position: relative;
+    width: 100%;
+}
+
+.field-select__trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 11px 14px;
+
+    background: #fff;
+    color: #111827;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.field-select__trigger:hover {
+    border-color: #9ca3af;
+}
+
+.field-select__trigger.open {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .08);
+}
+
+.field-select__placeholder {
+    color: #9ca3af;
+}
+
+.field-select__icon {
+    flex-shrink: 0;
+    color: #6b7280;
+    transition: transform .2s ease;
+}
+
+.field-select__icon--open {
+    transform: rotate(180deg);
+}
+
+.field-select__menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    padding: 6px;
+    z-index: 50;
+}
+
+.field-select__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    padding: 9px 10px;
+
+    font-size: 14px;
+    color: #111827;
+    text-align: left;
+
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease;
+}
+
+.field-select__item:hover {
+    background: #f5f7fb;
+}
+
+.field-select__item.active {
+    background: rgba(37, 99, 235, .08);
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.field-select__search {
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 9px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 13px;
+    background: #f9fafb;
+}
+
+.field-select__search:focus {
+    border-color: #2563eb;
+    box-shadow: none;
+    background: #fff;
+}
+
+.field-select__empty {
+    padding: 10px;
+    font-size: 13px;
+    color: #9ca3af;
+    text-align: center;
+}
+
+.language-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
