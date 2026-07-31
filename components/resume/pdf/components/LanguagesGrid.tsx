@@ -43,12 +43,11 @@ export default function LanguagesGrid({ languages }: Props) {
 
                                     <View
                                         key={index}
-                                        style={[
-                                            styles.dot,
+                                        style={
                                             index < language.rating
-                                                ? styles.dotFilled
-                                                : null,
-                                        ]}
+                                                ? [styles.dot, styles.dotFilled]
+                                                : [styles.dot]
+                                        }
                                     />
 
                                 ))}
