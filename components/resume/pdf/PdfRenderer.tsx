@@ -3,7 +3,7 @@ import MinimalPdf from "./MinimalPdf";
 import ExecutivePdf from "./ExecutivePdf";
 
 import { ResumeData } from "../types/resume";
-import { ResumeTemplate } from "@/lib/templates";
+import { ResumeTemplate } from "@/src/lib/templates";
 
 
 
