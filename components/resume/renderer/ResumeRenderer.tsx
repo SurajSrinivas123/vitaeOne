@@ -27,14 +27,14 @@ export default function ResumeRenderer({
                     key={page.id}
                     className="resume-paper"
                 >
-                    {template === "modern" && (
+                    {template === "modern" && "blocks" in page && (
                         <Modern
                             data={data}
                             blocks={page.blocks}
                         />
                     )}
 
-                    {template === "minimal" && (
+                    {template === "minimal" && "leftBlocks" in page && (
                         <Minimal
                             data={data}
                             leftBlocks={page.leftBlocks}
@@ -43,7 +43,7 @@ export default function ResumeRenderer({
                         />
                     )}
 
-                    {template === "executive" && (
+                    {template === "executive" && "blocks" in page && (
                         <Executive
                             data={data}
                             blocks={page.blocks}
