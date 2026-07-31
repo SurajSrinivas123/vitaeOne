@@ -355,28 +355,6 @@ export const styles = StyleSheet.create({
 
 
     /* =======================
-           TRAINING
-    ======================= */
-
-
-    trainingRow: {
-
-        flexDirection: "row",
-
-        marginBottom: px(12),
-
-    },
-
-    trainingItem: {
-
-        width: "33.33%",
-
-        paddingRight: px(20),
-
-    },
-
-
-    /* =======================
           LANGUAGES
    ======================= */
 
