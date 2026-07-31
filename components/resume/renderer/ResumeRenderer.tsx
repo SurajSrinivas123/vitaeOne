@@ -4,7 +4,7 @@ import Executive from "../templates/executive/Executive";
 import { ResumeData } from "../types/resume";
 import { paginate } from "../engine/paginate";
 import { paginateMinimal } from "../engine/paginateMinimal";
-import { ResumeTemplate } from "@/lib/templates";
+import { ResumeTemplate } from "@/src/lib/templates";
 
 interface ResumeRendererProps {
     data: ResumeData;
