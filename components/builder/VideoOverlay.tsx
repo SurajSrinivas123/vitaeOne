@@ -7,7 +7,7 @@ import { hasSeenInSession, markSeenInSession } from "@/lib/storage";
 const SESSION_KEY = "vitaeone_builder_video_seen";
 
 // Replace this with your own video later
-const YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+const YOUTUBE_EMBED_URL = "https://www.youtube.com/embed/UwQGytcfaVQ";
 
 export default function VideoOverlay() {
     const [visible, setVisible] = useState(false);
